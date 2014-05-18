@@ -7,10 +7,9 @@ print('Please enter your username.')
 name=input()
  
 username=  {
-'Bryce'
-'Jack'
-'Liam'
-'Sabian'
+'Admin'
+'User'
+'Moderator'
 } 
 if name == (username):
         print('Please wait')
@@ -20,8 +19,7 @@ if name == (username):
  
 password=input()
  
-enterpassword='Admin'
- 
+enterpassword='pass'
 if password == (enterpassword):
         print('Please wait')
         time.sleep(2)
