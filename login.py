@@ -10,8 +10,8 @@ name=input()
 #the three types of users, chnage the names and the password. They act as two codes, the username is a perm based password 
 #giving the user a perm, the second is the system wide code, for any changes made
 username=  {
-'Admin'
-'User'
+'Admin',
+'User',
 'Moderator'
 } 
 if name == (username):
