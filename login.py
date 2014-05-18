@@ -1,3 +1,5 @@
+# Copyright (C) 2014 Bryce Simpson <brycesimpson99@gmail.com>
+
 #Login
  
 import time
