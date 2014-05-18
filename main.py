@@ -57,8 +57,8 @@ commands={
 if command==(commands):
           print('Please wait')
           time.sleep(1.5)
-          print('')
-          print('Executing command' + commands)
+          execfile("laser.py")
+          print('Executing command')
 
 if command!=(commands):
           print 'Please Wait'
