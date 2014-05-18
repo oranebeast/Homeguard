@@ -33,7 +33,7 @@ if password == (enterpassword):
         time.sleep(10)
 #Logs people that have logged into the console
         logging.basicConfig(filename='previouslogins.log',level=logging.DEBUG)
-        logging.debug(username + " has logged in")
+        logging.debug(time + username + " has logged in")
         
  
 if name != (username):
