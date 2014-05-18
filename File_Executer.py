@@ -11,3 +11,8 @@ if command==(commands)
           time.sleep(1.5)
           print('')
           print('Executing command' + commands)
+
+if command!=(commands)
+          print 'Please Wait'
+          sleep (1.5)
+          print 'No Such Command'
