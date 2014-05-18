@@ -59,8 +59,10 @@ if command==(commands):
           time.sleep(1.5)
           execfile("laser.py")
           print('Executing command')
+          logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
+          logging.debug(time + username + " has used" + commands)
 
 if command!=(commands):
           print 'Please Wait'
           sleep (1.5)
-          print 'No Such Command'
+          print 'No Such Command Please Try Again'
