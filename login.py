@@ -1,6 +1,7 @@
 #Login
  
 import time
+import logging
   For name
 print('Please enter your username.')
  
@@ -30,6 +31,10 @@ if password == (enterpassword):
         time.sleep(1.5)
         print('Welcome '+username)
         time.sleep(10)
+#Logs people that have logged into the console
+        logging.basicConfig(filename='previouslogins.log',level=logging.DEBUG)
+        logging.debug('Someone Has Logged Into The Console' + username)
+        
  
 if name != (username):
         print('Please wait')
