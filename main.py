@@ -64,7 +64,8 @@ commands={
 'upload',
 'light',
 'start',
-'stop'
+'stop',
+'exit'
 }
 #Put this in to make it simple
 if command==(admin):
@@ -74,6 +75,10 @@ if command==(admin):
           adminpassword=input()
           if adminpassword == (Admin):
                            set group 'Admin'
+                           print('Logged in as Admin')
+          if adminpassword != (Admin)
+                           print('Incorrect password')
+                           command=input()
 
 if command==(mod):
           print('Please wait')
@@ -122,6 +127,22 @@ if command==(stop):
           print('Executing command')
           logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
           logging.debug(time + username + "has used the stop command")
+
+if command==(exit):
+          print('Please wait')
+          time.sleep(1.5)
+          print('Exiting Vitanoxi's HomeGuard Console')
+          print('Exiting in 5')
+          sleep (1)
+          print('4')
+          sleep(1)
+          print('3')
+          sleep(1)
+          print('2')
+          sleep(1)
+          print('1')
+          sleep(1)
+          exit
           
 if command!=(commands):
           print 'Please Wait'
