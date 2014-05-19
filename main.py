@@ -64,6 +64,7 @@ if name == (User)
 command=input()
 
 commands={
+'admin',
 'laser',
 'upload',
 'light',
@@ -71,6 +72,14 @@ commands={
 'stop'
 }
 #Put this in to make it simple
+if command==(admin):
+          print('Please wait')
+          time.sleep(1.5)
+          print(Please Enter Admin Password!)
+          adminpassword=input()
+          if adminpassword == (Admin):
+                           set group 'Admin'
+          
 if command==(laser):
           print('Please wait')
           time.sleep(1.5)
