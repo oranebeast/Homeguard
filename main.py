@@ -46,16 +46,10 @@ if name != (username):
         time.sleep(1.5)
         exit
 
-#Command Structure:
+#Group Command Structure:
 #Admin
 #Mod
-#User
-if name == (Admin)
-        set group 'Admin'
-        
-if name == (Moderator)
-        set group 'Mod'        
-
+#User       
 if name == (User)
         set group 'User'        
 
@@ -65,6 +59,7 @@ command=input()
 
 commands={
 'admin',
+'mod',
 'laser',
 'upload',
 'light',
@@ -79,6 +74,14 @@ if command==(admin):
           adminpassword=input()
           if adminpassword == (Admin):
                            set group 'Admin'
+
+if command==(mod):
+          print('Please wait')
+          time.sleep(1.5)
+          print(Please Enter Moderator Password!)
+          modpassword=input()
+          if modpassword == (Mod):
+                           set group 'Moderator'
           
 if command==(laser):
           print('Please wait')
@@ -124,3 +127,4 @@ if command!=(commands):
           print 'Please Wait'
           sleep (1.5)
           print 'No Such Command Please Try Again'
+          command=input()
