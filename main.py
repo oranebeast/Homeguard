@@ -51,17 +51,53 @@ if name != (username):
 command=input()
 
 commands={
-'laser'
+'laser',
+'upload',
+'light',
+'start',
+'stop'
 }
-
-if command==(commands):
+#Put this in to mmake it simple
+if command==(laser):
           print('Please wait')
           time.sleep(1.5)
           execfile("laser.py")
           print('Executing command')
           logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
-          logging.debug(time + username + " has used" + commands)
+          logging.debug(time + username + "has used the laser command")
 
+if command==(light):
+          print('Please wait')
+          time.sleep(1.5)
+          execfile("light.py")
+          print('Executing command')
+          logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
+          logging.debug(time + username + "has used the light command")
+          
+if command==(upload):
+          print('Please wait')
+          time.sleep(1.5)
+          execfile("upload.py")
+          print('Executing command')
+          logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
+          logging.debug(time + username + "has used the upload command")
+
+if command==(start):
+          print('Please wait')
+          time.sleep(1.5)
+          execfile("start.py")
+          print('Executing command')
+          logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
+          logging.debug(time + username + "has used the start command")          
+
+if command==(stop):
+          print('Please wait')
+          time.sleep(1.5)
+          execfile("stop.py")
+          print('Executing command')
+          logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
+          logging.debug(time + username + "has used the stop command")
+          
 if command!=(commands):
           print 'Please Wait'
           sleep (1.5)
