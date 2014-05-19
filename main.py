@@ -131,7 +131,7 @@ if command==(stop):
 if command==(exit):
           print('Please wait')
           time.sleep(1.5)
-          print('Exiting Vitanoxi's HomeGuard Console')
+          print('Exiting Vitanoxi HomeGuard Console')
           print('Exiting in 5')
           sleep (1)
           print('4')
