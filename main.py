@@ -32,7 +32,7 @@ if password == (enterpassword):
         print('Correct, logging in.')
         time.sleep(1.5)
         print('Welcome '+username)
-        time.sleep(10)
+        time.sleep(2)
 #Logs people that have logged into the console
         logging.basicConfig(filename='previouslogins.log',level=logging.DEBUG)
         logging.debug(time + username + " has logged in")
@@ -55,7 +55,12 @@ if name == (User)
 
 #executes commands for the script files
 
+print('Welcome to your HomeGuard command console by Vitanoxi')
+print(version+'Please input your command below.')
+
 command=input()
+
+version='HomeGuard Version 1.'
 
 commands={
 'admin',
