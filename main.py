@@ -1,4 +1,4 @@
-# Copyright (C) 2014 Bryce Simpson <brycesimpson99@gmail.com>
+# Copyright (C) 2014 Vitanoxi <Vitanoxi@gmail.com>
 
 #Login
  
@@ -46,6 +46,19 @@ if name != (username):
         time.sleep(1.5)
         exit
 
+#Command Structure:
+#Admin
+#Mod
+#User
+if name == (Admin)
+        set group 'Admin'
+        
+if name == (Moderator)
+        set group 'Mod'        
+
+if name == (User)
+        set group 'User'        
+
 #executes commands for the script files
 
 command=input()
@@ -57,7 +70,7 @@ commands={
 'start',
 'stop'
 }
-#Put this in to mmake it simple
+#Put this in to make it simple
 if command==(laser):
           print('Please wait')
           time.sleep(1.5)
