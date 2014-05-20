@@ -138,6 +138,11 @@ if command==(opengui):
 if command==(help):
           print('admin, mod, laser, upload, opengui, help, exit, version')
           
+if command==(egg):
+          print('Congrats you have found the easter egg here is your prize!')
+          time.sleep(5)
+          exit          
+          
 if command==(exit):
           print('Please wait')
           time.sleep(1.5)
@@ -152,7 +157,6 @@ if command==(exit):
           time.sleep(1)
           print('1')
           time.sleep(1)
-          print('BOOOM!')
           exit
           
 if command!=(commands):
