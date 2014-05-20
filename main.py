@@ -4,7 +4,7 @@
  
 import time
 import logging
-  For name
+
 print('Please enter your username.')
  
 name=input()
@@ -45,15 +45,16 @@ if name != (username):
         print('Incorrect, closing program.')
         time.sleep(1.5)
         exit
+       
+if name == (User)
+        group='User'
 
 #Group Command Structure:
 #Admin
 #Mod
 #User       
-if name == (User)
-        set group 'User'        
 
-#executes commands for the script files
+#executes commands when entered
 
 print('Welcome to your HomeGuard command console by Vitanoxi')
 print(version+'Please input your command below.')
@@ -61,37 +62,46 @@ print(version+'Please input your command below.')
 command=input()
 
 version='HomeGuard Version 1.'
+creator='Vitanoxi <Vitanoxi@gmail.com>'
 
 commands={
-'admin',
-'mod',
+'adminpass',
+'modpass',
 'laser',
 'upload',
 'light',
-'start',
-'stop',
-'exit'
+'opengui',
+'help',
+'exit',
+'version'
 }
 #Put this in to make it simple
-if command==(admin):
+if command==(creator):
+          print(version+creator)
+
+if command==(adminpass):
           print('Please wait')
           time.sleep(1.5)
           print(Please Enter Admin Password!)
           adminpassword=input()
           if adminpassword == (Admin):
-                           set group 'Admin'
+                           group='Admin'
                            print('Logged in as Admin')
           if adminpassword != (Admin)
                            print('Incorrect password')
                            command=input()
 
-if command==(mod):
+if command==(modpass):
           print('Please wait')
           time.sleep(1.5)
           print(Please Enter Moderator Password!)
           modpassword=input()
           if modpassword == (Mod):
-                           set group 'Moderator'
+                         group='Moderator'
+                         print('Logged in as Moderator')
+          if modpassword != (Mod)
+                           print('Incorrect password')
+                           command=input()
           
 if command==(laser):
           print('Please wait')
@@ -117,40 +127,35 @@ if command==(upload):
           logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
           logging.debug(time + username + "has used the upload command")
 
-if command==(start):
+if command==(opengui):
           print('Please wait')
           time.sleep(1.5)
-          execfile("start.py")
+          execfile("gui.py")
           print('Executing command')
           logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
-          logging.debug(time + username + "has used the start command")          
-
-if command==(stop):
-          print('Please wait')
-          time.sleep(1.5)
-          execfile("stop.py")
-          print('Executing command')
-          logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
-          logging.debug(time + username + "has used the stop command")
-
+          logging.debug(time + username + "has used the open gui command")
+          
+if command==(help):
+          print('admin, mod, laser, upload, opengui, help, exit, version')
+          
 if command==(exit):
           print('Please wait')
           time.sleep(1.5)
           print('Exiting Vitanoxi HomeGuard Console')
           print('Exiting in 5')
-          sleep (1)
+          time.sleep (1)
           print('4')
-          sleep(1)
+          time.sleep(1)
           print('3')
-          sleep(1)
+          time.sleep(1)
           print('2')
-          sleep(1)
+          time.sleep(1)
           print('1')
-          sleep(1)
+          time.sleep(1)
           exit
           
 if command!=(commands):
           print 'Please Wait'
-          sleep (1.5)
+          time.sleep (1.5)
           print 'No Such Command Please Try Again'
           command=input()
