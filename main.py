@@ -45,9 +45,6 @@ if name != (username):
         print('Incorrect, closing program.')
         time.sleep(1.5)
         exit
-       
-if name == (User)
-        group='User'
 
 #Group Command Structure:
 #Admin
@@ -79,30 +76,30 @@ commands={
 if command==(creator):
           print(version+creator)
 
-if command==(adminpass):
-          print('Please wait')
-          time.sleep(1.5)
-          print(Please Enter Admin Password!)
-          adminpassword=input()
-          if adminpassword == (Admin):
-                           group='Admin'
-                           print('Logged in as Admin')
-          if adminpassword != (Admin)
-                           print('Incorrect password')
-                           command=input()
+#if command==(adminpass):
+#          print('Please wait')
+ #         time.sleep(1.5)
+ #         print(Please Enter Admin Password!)
+#          adminpassword=input()
+ #         if adminpassword == (Admin):
+ #                          group='Admin'
+#                           print('Logged in as Admin')
+#          if adminpassword != (Admin)
+ #                          print('Incorrect password')
+#                           command=input()
 
-if command==(modpass):
-          print('Please wait')
-          time.sleep(1.5)
-          print(Please Enter Moderator Password!)
-          modpassword=input()
-          if modpassword == (Mod):
-                         group='Moderator'
-                         print('Logged in as Moderator')
-          if modpassword != (Mod)
-                           print('Incorrect password')
-                           command=input()
-          
+#if command==(modpass):
+ #         print('Please wait')
+  #        time.sleep(1.5)
+ #         print(Please Enter Moderator Password!)
+ #         modpassword=input()
+#          if modpassword == (Mod):
+#                         group='Moderator'
+#                         print('Logged in as Moderator')
+#          if modpassword != (Mod)
+#                           print('Incorrect password')
+#                           command=input()
+         
 if command==(laser):
           print('Please wait')
           time.sleep(1.5)
@@ -160,7 +157,7 @@ if command==(exit):
           exit
           
 if command!=(commands):
-          print 'Please Wait'
+          print('Please Wait')
           time.sleep (1.5)
-          print 'No Such Command Please Try Again'
+          print('No Such Command Please Try Again')
           command=input()
