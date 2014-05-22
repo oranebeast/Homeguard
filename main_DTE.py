@@ -6,23 +6,8 @@
 import time
 import logging
 
-print('Please enter your username.')
- 
-name=input()
- 
-#the three types of users, chnage the names and the password. They act as two codes, the username is a perm based password 
-#giving the user a perm, the second is the system wide code, for any changes made
-username=  {
-'Admin',
-'User',
-'Moderator'
-} 
-if name == (username):
-        print('Please wait')
-        time.sleep(1.5)
-        print('')
-        print('Correct, please enter your password.')
- 
+print('Please enter your Password.')
+
 password=input()
  
 enterpassword='pass'
@@ -32,7 +17,7 @@ if password == (enterpassword):
         print('')
         print('Correct, logging in.')
         time.sleep(1.5)
-        print('Welcome '+username)
+        print('Welcome User')
         time.sleep(2)
 #Logs people that have logged into the console
         logging.basicConfig(filename='previouslogins.log',level=logging.DEBUG)
