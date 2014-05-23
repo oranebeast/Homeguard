@@ -49,16 +49,13 @@ command=input()
 version='HomeGuard Version 1.'
 creator='Vitanoxi <Vitanoxi@gmail.com>'
 
-commands={
-    'adminpass',
-    'modpass',
-    'laser',
-    'upload',
-    'light',
-    'opengui',
-    'help',
-    'exit',
-    'version'
+laser='laser'
+light='light'
+upload='upload'
+opengui='opengui'
+help='help'
+egg='egg'
+exit='exit'
 }
 #Put this in to make it simple
 if command == (creator):
@@ -120,9 +117,9 @@ if command == (exit):
         time.sleep(1)
         print('1')
         time.sleep(1)
-        exit
+        sys.exit("Closed")
 
-if command !=(commands):
+if command !=(laser + light + upload + opengui + help + egg + exit):
         print('Please Wait')
         time.sleep(1.5)
         print('No Such Command Please Try Again')
