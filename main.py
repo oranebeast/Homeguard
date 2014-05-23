@@ -55,7 +55,7 @@ upload='upload'
 opengui='opengui'
 help='help'
 egg='egg'
-exit='exit'
+exitprogram='exitprogram'
 }
 #Put this in to make it simple
 if command == (creator):
@@ -115,7 +115,7 @@ if command == (egg):
         time.sleep(5)
         exit
 
-if command == (exit):
+if command == (exitprogram):
         print('Please wait')
         time.sleep(1.5)
         print('Exiting Vitanoxi HomeGuard Console')
