@@ -40,7 +40,7 @@ if name != (username):
 #executes commands when entered
 
 print('Welcome to your HomeGuard command console by Vitanoxi')
-print(version+'Please input your command below.')
+print('Please input your command below.')
 
 command=input()
 
