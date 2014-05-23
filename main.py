@@ -46,7 +46,7 @@ print('Please input your command below.')
 
 command=input()
 
-version='HomeGuard Version 1.'
+version='HomeGuard Version 1.1'
 creator='Vitanoxi <Vitanoxi@gmail.com>'
 
 laser='laser'
