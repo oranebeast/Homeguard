@@ -60,6 +60,8 @@ exit='exit'
 #Put this in to make it simple
 if command == (creator):
         print(version+creator)
+        time.sleep(2)
+        command=input()
 
 
 
@@ -70,6 +72,8 @@ if command == (laser):
         print('Executing command')
         logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
         logging.debug(time + username + "has used the laser command")
+        time.sleep(2)
+        command=input()
 
 if command == (light):
         print('Please wait')
@@ -78,6 +82,8 @@ if command == (light):
         print('Executing command')
         logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
         logging.debug(time + username + "has used the light command")
+        time.sleep(2)
+        command=input()
 
 if command == (upload):
         print('Please wait')
@@ -86,6 +92,8 @@ if command == (upload):
         print('Executing command')
         logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
         logging.debug(time + username + "has used the upload command")
+        time.sleep(2)
+        command=input()
 
 if command == (opengui):
         print('Please wait')
@@ -94,9 +102,13 @@ if command == (opengui):
         print('Executing command')
         logging.basicConfig(filename='Previouscommands.log',level=logging.DEBUG)
         logging.debug(time + username + "has used the open gui command")
+        time.sleep(2)
+        command=input()
 
 if command == (help):
         print('admin, mod, laser, upload, opengui, help, exit, version')
+        time.sleep(2)
+        command=input()
 
 if command == (egg):
         print('Congrats you have found the easter egg here is your prize!')
@@ -123,4 +135,5 @@ if command !=(laser + light + upload + opengui + help + egg + exit):
         print('Please Wait')
         time.sleep(1.5)
         print('No Such Command Please Try Again')
+        time.sleep(2)
         command=input()
