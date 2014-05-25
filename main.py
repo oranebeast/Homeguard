@@ -1,5 +1,4 @@
 # Copyright (C) 2014 Vitanoxi <Vitanoxi@gmail.com>
-#Developer Test Enviroment
 
 #Login
 
@@ -40,7 +39,6 @@ if password != ("pass"):
 #User
 
 #executes commands when entered
-'''AS FAR AS WE GOT WITHOUT ERRORS'''
 print('Welcome to your HomeGuard command console by Vitanoxi')
 print('Please input your command below.')
 
