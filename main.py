@@ -129,7 +129,7 @@ if command == (exitprogram):
         time.sleep(1)
         sys.exit("Closed")
 
-if command !=(laser + light + upload + opengui + help + egg + exit):
+if command !=(laser + light + upload + opengui + help + egg + exitprogram):
         print('Please Wait')
         time.sleep(1.5)
         print('No Such Command Please Try Again')
