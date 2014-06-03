@@ -12,9 +12,8 @@ A Python project for guarding the home, Uses webcams.
 To Do
 =========
 
-- [ ] Create login
 - [ ] Implement Dropbox
 - [ ] Create camera
 - [ ] Allow output photos
 - [ ] Create motion tracker
-- [ ] Make a better todo list
+- [ ] Possbile SOS command
