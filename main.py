@@ -31,7 +31,7 @@ if password != ("pass"):
         print('')
         print('Incorrect, closing program.')
         time.sleep(1.5)
-        sys.exit("Closed")
+        exit()
 
 #Group Command Structure:
 #Admin
@@ -111,7 +111,7 @@ if command == (help):
 if command == (egg):
         print('Congrats you have found the easter egg here is your prize!')
         time.sleep(5)
-        exit
+        exit()
 
 if command == (exitprogram):
         print('Please wait')
@@ -127,7 +127,7 @@ if command == (exitprogram):
         time.sleep(1)
         print('1')
         time.sleep(1)
-        sys.exit("Closed")
+        exit()
 
 if command !=(laser + light + upload + opengui + help + egg + exitprogram):
         print('Please Wait')
