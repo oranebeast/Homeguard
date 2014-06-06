@@ -13,3 +13,6 @@ if command !=(laser + light + upload + opengui + help + egg + exitprogram):
         print('''No Such Command Please Try Again. Use 'Help' for a list of commands ''')    #edited this line
         time.sleep(2)
         command=input()
+
+# | /-\  /-\ |
+#  | \-/  \-/ |
