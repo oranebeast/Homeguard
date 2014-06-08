@@ -53,7 +53,7 @@ if password != ("pass"):
         print('Incorrect, closing program.')
         time.sleep(1.5)
         exit("Closed")
-
+        
 #Group Command Structure:
 #Admin
 #Mod
@@ -66,6 +66,14 @@ print('Please input your command below.')
 command=input()
 
 #Put this in to make it simple
+
+if command !=(laser or light or upload or opengui or help or egg or exitprogram or version):
+        print('Please Wait')
+        time.sleep(1.5)
+        print('No Such Command Please Try Again')
+        time.sleep(2)
+        command=input()        
+
 
 if command == (laser):
         print('Please wait')
@@ -135,11 +143,5 @@ if command == (exitprogram):
         time.sleep(1)
         exit("Closed")
         
-if command !=(laser or light or upload or opengui or help or egg or exitprogram or version):
-        print('Please Wait')
-        time.sleep(1.5)
-        print('No Such Command Please Try Again')
-        time.sleep(2)
-        command=input()
         
         
