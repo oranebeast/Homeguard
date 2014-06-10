@@ -34,6 +34,7 @@ egg='egg'
 exitprogram='exitprogram'
 version='version'
 time = print now.strftime("%Y-%m-%d %H:%M")
+current_version="0.5"
 
 #Startup sequence
 print('#####################################################################')
@@ -62,7 +63,7 @@ print("Loading 90%")
 time.sleep(0.25)
 print("Loading 99%")
 time.sleep(5)
-print("Loaded Vitanoxi ")
+print("Loaded Vitanoxi "+current_version)
 time.sleep(1)
 print('Please enter your Password.')
 password=input()
