@@ -62,17 +62,7 @@ time.sleep(0.25)
 print("Loading 99%")
 time.sleep(5)
 print("Loaded Vitanoxi ")
-
-
-
-
-
-
-
-
-
-
-
+time.sleep(1)
 print('Please enter your Password.')
 password=input()
 
