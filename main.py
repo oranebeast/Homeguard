@@ -30,6 +30,7 @@ egg='egg'
 exitprogram='exitprogram'
 version='version'
 
+#Startup sequence
 print('#####################################################################')
 print('                              HOMEGUARD                              ')
 print('                              (C) 2014                               ')
