@@ -16,9 +16,13 @@
 #import getpass
 import time
 import logging
+import datetime
+import termcolor
+from termcolor import colored
 
 #Variables
-localtime = time.asctime( time.localtime(time.time()) )
+now = datetime.datetime.now()
+#localtime = time.asctime( time.localtime(time.time()) )
 enterpassword='pass'
 version1='HomeGuard Version 1.1'
 laser='laser'
@@ -29,12 +33,37 @@ help='help'
 egg='egg'
 exitprogram='exitprogram'
 version='version'
+time = print now.strftime("%Y-%m-%d %H:%M")
 
+#Startup sequence
 print('#####################################################################')
 print('                              HOMEGUARD                              ')
 print('                              (C) 2014                               ')
+print('                             Version 1.5                             ')
 print('#####################################################################')
-time.sleep(4)
+time.sleep(1)
+print("Loading 10%")
+time.sleep(0.25)
+print("Loading 20%")
+time.sleep(0.25)
+print("Loading 30%")
+time.sleep(0.25)
+print("Loading 40%")
+time.sleep(0.25)
+print("Loading 50%")
+time.sleep(0.25)
+print("Loading 60%")
+time.sleep(0.25)
+print("Loading 70%")
+time.sleep(0.25)
+print("Loading 80%")
+time.sleep(0.25)
+print("Loading 90%")
+time.sleep(0.25)
+print("Loading 99%")
+time.sleep(5)
+print("Loaded Vitanoxi ")
+time.sleep(1)
 print('Please enter your Password.')
 password=input()
 
@@ -48,7 +77,7 @@ if password == (enterpassword):
         time.sleep(2)
 #Logs people that have logged into the console
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("User logged in at " + localtime)
+        logging.debug("User logged in at " + time)
 
 
 if password != ("pass"):
@@ -80,50 +109,50 @@ if command !=(laser or light or upload or opengui or help or egg or exitprogram 
         command=input()        
 
 
-if command == (laser):
+if command == (laser.lower):
         print('Please wait')
         time.sleep(1.5)
         execfile("laser.py")
         print('Executing command')
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the laser command " + localtime)
+        logging.debug("Someone has used the laser command " + time)
         time.sleep(2)
         command=input()
 
-if command == (light):
+if command == (light.lower):
         print('Please wait')
         time.sleep(1.5)
         execfile("light.py")
         print('Executing command')
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the light command " + localtime)
+        logging.debug("Someone has used the light command " + time)
         time.sleep(2)
         command=input()
 
-if command == (upload):
+if command == (upload.lower):
         print('Please wait')
         time.sleep(1.5)
         execfile("upload.py")
         print('Executing command')
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the upload command "  + localtime)
+        logging.debug("Someone has used the upload command "  + time)
         time.sleep(2)
         command=input()
 
-if command == (opengui):
+if command == (opengui.lower):
         print('Please wait')
         time.sleep(1.5)
         execfile("gui.py")
         print('Executing command')
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the open gui command "  + localtime)
+        logging.debug("Someone has used the open gui command "  + time)
         time.sleep(2)
         command=input()
 
-if command == (help):
+if command == (help.lower):
         print('Available commands: admin, mod, laser, upload, opengui, help, exit, version')  #Says available commands
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the help command " + localtime)
+        logging.debug("Someone has used the help command " + time)
         time.sleep(2)
         command=input()
 
@@ -133,7 +162,7 @@ if command == (egg):
         time.sleep(5)
         exit()
 
-if command == (exitprogram):
+if command == (exitprogram.lower):
         print('Please wait')
         time.sleep(1.5)
         print('Exiting Vitanoxi HomeGuard Console')
@@ -148,4 +177,3 @@ if command == (exitprogram):
         print('1')
         time.sleep(1)
         exit("Closed")
-        
