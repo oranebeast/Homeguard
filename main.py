@@ -54,7 +54,7 @@ if password == (enterpassword):
         time.sleep(2)
 #Logs people that have logged into the console
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("User logged in at " + localtime)
+        logging.debug("User logged in at " + time)
 
 
 if password != ("pass"):
@@ -92,7 +92,7 @@ if command == (laser.lower):
         execfile("laser.py")
         print('Executing command')
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the laser command " + localtime)
+        logging.debug("Someone has used the laser command " + time)
         time.sleep(2)
         command=input()
 
@@ -102,7 +102,7 @@ if command == (light.lower):
         execfile("light.py")
         print('Executing command')
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the light command " + localtime)
+        logging.debug("Someone has used the light command " + time)
         time.sleep(2)
         command=input()
 
@@ -112,7 +112,7 @@ if command == (upload.lower):
         execfile("upload.py")
         print('Executing command')
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the upload command "  + localtime)
+        logging.debug("Someone has used the upload command "  + time)
         time.sleep(2)
         command=input()
 
@@ -122,14 +122,14 @@ if command == (opengui.lower):
         execfile("gui.py")
         print('Executing command')
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the open gui command "  + localtime)
+        logging.debug("Someone has used the open gui command "  + time)
         time.sleep(2)
         command=input()
 
 if command == (help.lower):
         print('Available commands: admin, mod, laser, upload, opengui, help, exit, version')  #Says available commands
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the help command " + localtime)
+        logging.debug("Someone has used the help command " + time)
         time.sleep(2)
         command=input()
 
