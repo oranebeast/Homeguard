@@ -80,7 +80,7 @@ if command !=(laser or light or upload or opengui or help or egg or exitprogram 
         command=input()        
 
 
-if command == (laser):
+if command == (laser.lower):
         print('Please wait')
         time.sleep(1.5)
         execfile("laser.py")
@@ -90,7 +90,7 @@ if command == (laser):
         time.sleep(2)
         command=input()
 
-if command == (light):
+if command == (light.lower):
         print('Please wait')
         time.sleep(1.5)
         execfile("light.py")
@@ -100,7 +100,7 @@ if command == (light):
         time.sleep(2)
         command=input()
 
-if command == (upload):
+if command == (upload.lower):
         print('Please wait')
         time.sleep(1.5)
         execfile("upload.py")
@@ -110,7 +110,7 @@ if command == (upload):
         time.sleep(2)
         command=input()
 
-if command == (opengui):
+if command == (opengui.lower):
         print('Please wait')
         time.sleep(1.5)
         execfile("gui.py")
@@ -120,7 +120,7 @@ if command == (opengui):
         time.sleep(2)
         command=input()
 
-if command == (help):
+if command == (help.lower):
         print('Available commands: admin, mod, laser, upload, opengui, help, exit, version')  #Says available commands
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
         logging.debug("Someone has used the help command " + localtime)
@@ -133,7 +133,7 @@ if command == (egg):
         time.sleep(5)
         exit()
 
-if command == (exitprogram):
+if command == (exitprogram.lower):
         print('Please wait')
         time.sleep(1.5)
         print('Exiting Vitanoxi HomeGuard Console')
