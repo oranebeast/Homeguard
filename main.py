@@ -42,7 +42,7 @@ if password == (enterpassword):
         print('Welcome User')
         time.sleep(2)
 #Logs people that have logged into the console
-        logging.basicConfig(filename='serverlogs.log',level=logging.DEBUG)
+        logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
         logging.debug("User logged in at " + localtime)
 
 
@@ -80,7 +80,7 @@ if command == (laser):
         time.sleep(1.5)
         execfile("laser.py")
         print('Executing command')
-        logging.basicConfig(filename='serverlogs.log',level=logging.DEBUG)
+        logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
         logging.debug("Someone has used the laser command " + localtime)
         time.sleep(2)
         command=input()
@@ -90,7 +90,7 @@ if command == (light):
         time.sleep(1.5)
         execfile("light.py")
         print('Executing command')
-        logging.basicConfig(filename='serverlogs.log',level=logging.DEBUG)
+        logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
         logging.debug("Someone has used the light command " + localtime)
         time.sleep(2)
         command=input()
@@ -100,7 +100,7 @@ if command == (upload):
         time.sleep(1.5)
         execfile("upload.py")
         print('Executing command')
-        logging.basicConfig(filename='serverlogs.log',level=logging.DEBUG)
+        logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
         logging.debug("Someone has used the upload command "  + localtime)
         time.sleep(2)
         command=input()
@@ -110,14 +110,14 @@ if command == (opengui):
         time.sleep(1.5)
         execfile("gui.py")
         print('Executing command')
-        logging.basicConfig(filename='serverlogs.log',level=logging.DEBUG)
+        logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
         logging.debug("Someone has used the open gui command "  + localtime)
         time.sleep(2)
         command=input()
 
 if command == (help):
         print('Available commands: admin, mod, laser, upload, opengui, help, exit, version')  #Says available commands
-        logging.basicConfig(filename='serverlogs.log',level=logging.DEBUG)
+        logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
         logging.debug("Someone has used the help command " + localtime)
         time.sleep(2)
         command=input()
