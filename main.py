@@ -29,7 +29,11 @@ help='help'
 egg='egg'
 exitprogram='exitprogram'
 version='version'
-       
+print('#####################################################################')
+print('                              HOMEGUARD                              ')
+print('                              (C) 2014                               ')
+print('#####################################################################')
+time.sleep(4)
 print('Please enter your Password.')
 password=input()
 
