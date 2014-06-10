@@ -16,6 +16,8 @@
 #import getpass
 import time
 import logging
+import termcolor
+from termcolor import colored
 
 #Variables
 localtime = time.asctime( time.localtime(time.time()) )
