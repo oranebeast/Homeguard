@@ -33,7 +33,7 @@ help='help'
 egg='egg'
 exitprogram='exitprogram'
 version='version'
-time = print now.strftime("%Y-%m-%d %H:%M")
+time = now.strftime("%Y-%m-%d %H:%M")
 
 #Startup sequence
 print('#####################################################################')
