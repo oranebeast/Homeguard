@@ -29,6 +29,7 @@ help='help'
 egg='egg'
 exitprogram='exitprogram'
 version='version'
+
 print('#####################################################################')
 print('                              HOMEGUARD                              ')
 print('                              (C) 2014                               ')
