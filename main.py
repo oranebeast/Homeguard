@@ -16,10 +16,12 @@
 #import getpass
 import time
 import logging
+import datetime
 import termcolor
 from termcolor import colored
 
 #Variables
+now = datetime.datetime.now()
 localtime = time.asctime( time.localtime(time.time()) )
 enterpassword='pass'
 version1='HomeGuard Version 1.1'
@@ -31,6 +33,7 @@ help='help'
 egg='egg'
 exitprogram='exitprogram'
 version='version'
+time = print now.strftime("%Y-%m-%d %H:%M")
 
 #Startup sequence
 print('#####################################################################')
