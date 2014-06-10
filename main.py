@@ -22,7 +22,7 @@ from termcolor import colored
 
 #Variables
 now = datetime.datetime.now()
-localtime = time.asctime( time.localtime(time.time()) )
+#localtime = time.asctime( time.localtime(time.time()) )
 enterpassword='pass'
 version1='HomeGuard Version 1.1'
 laser='laser'
