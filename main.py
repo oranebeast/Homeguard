@@ -34,13 +34,13 @@ egg='egg'
 exitprogram='exitprogram'
 version='version'
 time = print now.strftime("%Y-%m-%d %H:%M")
-current_version="0.5"
+current_version="1.5"
 
 #Startup sequence
 print('#####################################################################')
 print('                              HOMEGUARD                              ')
 print('                              (C) 2014                               ')
-print('                             Version 1.5                             ')
+print('                             Version ' + current_version'            ')
 print('#####################################################################')
 time.sleep(1)
 print("Loading 10%")
