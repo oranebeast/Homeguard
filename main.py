@@ -40,7 +40,39 @@ print('#####################################################################')
 print('                              HOMEGUARD                              ')
 print('                              (C) 2014                               ')
 print('#####################################################################')
-time.sleep(4)
+time.sleep(1)
+print("Loading 10%")
+time.sleep(0.25)
+print("Loading 20%")
+time.sleep(0.25)
+print("Loading 30%")
+time.sleep(0.25)
+print("Loading 40%")
+time.sleep(0.25)
+print("Loading 50%")
+time.sleep(0.25)
+print("Loading 60%")
+time.sleep(0.25)
+print("Loading 70%")
+time.sleep(0.25)
+print("Loading 80%")
+time.sleep(0.25)
+print("Loading 90%")
+time.sleep(0.25)
+print("Loading 99%")
+time.sleep(5)
+print("Loaded Vitanoxi ")
+
+
+
+
+
+
+
+
+
+
+
 print('Please enter your Password.')
 password=input()
 
