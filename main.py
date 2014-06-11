@@ -35,6 +35,8 @@ exitprogram='exitprogram'
 version='version'
 time = print now.strftime("%Y-%m-%d %H:%M")
 current_version="1.5"
+developers="Jack Heikell, Bryce Simpson and Sabian Coomber-Nickerson"
+credits="credits"
 
 #Startup sequence
 print('#####################################################################')
@@ -191,5 +193,7 @@ if command == (version.lower):
         time.sleep(5)
         exit()
         
+if command == (credits.lower):
+        print(developers)
         
         
