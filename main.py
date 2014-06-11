@@ -107,7 +107,7 @@ command=input()
 if command !=(laser.lower or light.lower or upload.lower or opengui.lower or help.lower or egg or exitprogram.lower or version.lower):
         print('Please Wait')
         time.sleep(1.5)
-        print('No Such Command Please Try Again')
+        print('No Such Command, use *help* for a list of available commands')
         time.sleep(2)
         command=input()        
 
@@ -195,5 +195,6 @@ if command == (version.lower):
         
 if command == (credits.lower):
         print(developers)
+        time.sleep(2)
         
         
