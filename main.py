@@ -191,7 +191,6 @@ if command == (version.lower):
         print('                             Version ' + current_version + '         ')
         print('#####################################################################')
         time.sleep(5)
-        exit()
         
 if command == (credits.lower):
         print(developers)
