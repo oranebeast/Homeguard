@@ -151,7 +151,7 @@ if command == (opengui.lower):
         command=input()
 
 if command == (help.lower):
-        print('Available commands: admin, mod, laser, upload, opengui, help, exit, version')  #Says available commands
+        print('Available commands: admin, mod, laser, upload, opengui, help, exit, version')
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
         logging.debug("Someone has used the help command " + time)
         time.sleep(2)
