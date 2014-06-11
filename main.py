@@ -186,9 +186,6 @@ if command == (version.lower):
         print('                              (C) 2014                               ')
         print('                             Version ' + current_version + '         ')
         print('#####################################################################')
-        
-        
-        
         time.sleep(5)
         exit()
         
