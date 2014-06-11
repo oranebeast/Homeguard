@@ -177,6 +177,8 @@ if command == (exitprogram.lower):
         time.sleep(1)
         print('1')
         time.sleep(1)
+        print("Goodbye :)")
+        time.sleep(1)
         exit("Closed")
         
         
