@@ -102,7 +102,7 @@ command=input()
 
 #Put this in to make it simple
 
-if command !=(laser or light or upload or opengui or help or egg or exitprogram or version):
+if command !=(laser.lower or light.lower or upload.lower or opengui.lower or help.lower or egg or exitprogram.lower or version.lower):
         print('Please Wait')
         time.sleep(1.5)
         print('No Such Command Please Try Again')
@@ -178,6 +178,19 @@ if command == (exitprogram.lower):
         print('1')
         time.sleep(1)
         exit("Closed")
+        
+        
+if command == (version.lower):
+        print('#####################################################################')
+        print('                              HOMEGUARD                              ')
+        print('                              (C) 2014                               ')
+        print('                             Version ' + current_version'            ')
+        print('#####################################################################')
+        
+        
+        
+        time.sleep(5)
+        exit()
         
         
         
