@@ -112,7 +112,7 @@ if command !=(laser.lower or light.lower or upload.lower or opengui.lower or hel
         command=input()        
 
 
-if command == (laser.lower):
+if command == (laser):
         print('Please wait')
         time.sleep(1.5)
         execfile("laser.py")
@@ -122,7 +122,7 @@ if command == (laser.lower):
         time.sleep(2)
         command=input()
 
-if command == (light.lower):
+if command == (light):
         print('Please wait')
         time.sleep(1.5)
         execfile("light.py")
@@ -132,7 +132,7 @@ if command == (light.lower):
         time.sleep(2)
         command=input()
 
-if command == (upload.lower):
+if command == (upload):
         print('Please wait')
         time.sleep(1.5)
         execfile("upload.py")
@@ -142,7 +142,7 @@ if command == (upload.lower):
         time.sleep(2)
         command=input()
 
-if command == (opengui.lower):
+if command == (opengui):
         print('Please wait')
         time.sleep(1.5)
         execfile("gui.py")
@@ -152,7 +152,7 @@ if command == (opengui.lower):
         time.sleep(2)
         command=input()
 
-if command == (help.lower):
+if command == (help):
         print('Available commands: admin, mod, laser, upload, opengui, help, exit, version')
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
         logging.debug("Someone has used the help command " + time)
@@ -165,7 +165,7 @@ if command == (egg):
         time.sleep(5)
         exit()
 
-if command == (exitprogram.lower):
+if command == (exitprogram):
         print('Please wait')
         time.sleep(1.5)
         print('Exiting Vitanoxi HomeGuard Console')
@@ -184,7 +184,7 @@ if command == (exitprogram.lower):
         exit("Closed")
         
         
-if command == (version.lower):
+if command == (version):
         print('#####################################################################')
         print('                              HOMEGUARD                              ')
         print('                              (C) 2014                               ')
@@ -192,7 +192,7 @@ if command == (version.lower):
         print('#####################################################################')
         time.sleep(5)
         
-if command == (credits.lower):
+if command == (credits):
         print(developers)
         time.sleep(2)
         
