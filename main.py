@@ -188,7 +188,7 @@ if command == (version):
         print('#####################################################################')
         print('                              HOMEGUARD                              ')
         print('                              (C) 2014                               ')
-        print('                             Version ' + current_version + '         ')
+        print('                             Version ' + current_version)
         print('#####################################################################')
         time.sleep(5)
         
