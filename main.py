@@ -83,7 +83,7 @@ if password == (enterpassword):
         logging.debug("User logged in at " + time)
 
 
-if password != ("pass"):
+if password != (enterpassword):
         print('Please wait')
         time.sleep(2)
         print('')
