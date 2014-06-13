@@ -21,10 +21,10 @@ import termcolor
 from termcolor import colored
 
 #Variables
-now = datetime.datetime.now()
-#localtime = time.asctime( time.localtime(time.time()) )
+#now = datetime.datetime.now()
+localtime = time.asctime( time.localtime(time.time()) )
 enterpassword='pass'
-time = print now.strftime("%Y-%m-%d %H:%M")
+#time = now.strftime("%Y-%m-%d %H:%M")
 current_version="1.6"
 developers="Jack Heikell, Bryce Simpson and Sabian Coomber-Nickerson"
 
