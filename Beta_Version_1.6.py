@@ -58,7 +58,7 @@ time.sleep(5)
 print("Loaded Vitanoxi Verstion " + current_version)
 time.sleep(1)
 print('Please enter your Password.')
-password=input()
+password=input('Password: ')
 
 if password == 'pass':
         print('Please wait')
@@ -88,12 +88,12 @@ if password == 'pass':
 print('Welcome to your HomeGuard command console by Vitanoxi')
 print('Please input your command below.')
 
-command=input()
+command=input('Command: ')
 
 #Put this in to make it simple
         
 if command == ('laser' or 'light' or 'upload' or 'opengui' or 'help' or 'egg' or 'exitprogram' or 'version' or 'credits'):
-        print('Success!')
+        print('I LIKE MEG!')
         else
-        print('It doesnt work!')
+        print('I LIKE AMY!')
                   
