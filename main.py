@@ -103,7 +103,7 @@ print('Please input your command below.')
 command=input()
 
 #Put this in to make it simple
-
+        
 if command == (laser):
         print('Please wait')
         time.sleep(1.5)
