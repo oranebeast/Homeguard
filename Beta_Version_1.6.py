@@ -1,6 +1,6 @@
 # Copyright (C) 2014 Vitanoxi <Vitanoxi@gmail.com>
 
-#Login
+#
 #  _    _                                                _ 
 # | |  | |                                              | |
 # | |__| | ___  _ __ ___   ___  __ _ _   _  __ _ _ __ __| |
@@ -24,19 +24,9 @@ from termcolor import colored
 now = datetime.datetime.now()
 #localtime = time.asctime( time.localtime(time.time()) )
 enterpassword='pass'
-version1='HomeGuard Version 1.1'
-laser='laser'
-light='light'
-upload='upload'
-opengui='opengui'
-help='help'
-egg='egg'
-exitprogram='exitprogram'
-version='version'
 time = print now.strftime("%Y-%m-%d %H:%M")
-current_version="1.5"
+current_version="1.6"
 developers="Jack Heikell, Bryce Simpson and Sabian Coomber-Nickerson"
-credits="credits"
 
 #Startup sequence
 print('#####################################################################')
@@ -70,10 +60,9 @@ time.sleep(1)
 print('Please enter your Password.')
 password=input()
 
-if password == (enterpassword):
+if password == 'pass':
         print('Please wait')
         time.sleep(2)
-        print('')
         print('Correct, logging in.')
         time.sleep(1.5)
         print('Welcome User')
@@ -81,15 +70,14 @@ if password == (enterpassword):
 #Logs people that have logged into the console
         logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
         logging.debug("User logged in at " + time)
-
-
-if password != (enterpassword):
+        else
         print('Please wait')
         time.sleep(2)
-        print('')
         print('Incorrect, closing program.')
         time.sleep(1.5)
         exit("Closed")
+        
+
         
 #Group Command Structure:
 #Admin
@@ -104,7 +92,7 @@ command=input()
 
 #Put this in to make it simple
         
-if command == (laser or light or upload or opengui or help or egg or exitprogram or version or credits):
+if command == ('laser' or 'light' or 'upload' or 'opengui' or 'help' or 'egg' or 'exitprogram' or 'version' or 'credits'):
         print('Success!')
         else
         print('It doesnt work!')
