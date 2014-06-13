@@ -18,7 +18,6 @@ import time
 import logging
 import datetime
 import termcolor
-from termcolor import colored
 
 #Variables
 #now = datetime.datetime.now()
@@ -32,7 +31,7 @@ developers="Jack Heikell, Bryce Simpson and Sabian Coomber-Nickerson"
 print('#####################################################################')
 print('                              HOMEGUARD                              ')
 print('                              (C) 2014                               ')
-print(                             'Version ' + current_version              )
+print(                             'Version: ' + current_version             )
 print('#####################################################################')
 time.sleep(1)
 print("Loading 10%")
