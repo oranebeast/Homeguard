@@ -10,15 +10,15 @@
 #                               __/ |                      
 #                              |___/                 
 
-#import cv2
+import cv2
 #import sys
 #import hashlib
 #import getpass
 import time
 import logging
 import datetime
-import termcolor
-from termcolor import colored
+#import termcolor
+#from termcolor import colored
 
 #Variables
 now = datetime.datetime.now()
@@ -33,16 +33,16 @@ help='help'
 egg='egg'
 exitprogram='exitprogram'
 version='version'
-time = print now.strftime("%Y-%m-%d %H:%M")
+#time = print now.strftime("%Y-%m-%d %H:%M")
 current_version="1.5"
-developers="Jack Heikell, Bryce Simpson and Sabian Coomber-Nickerson"
+developers="Bryce Simpson, Jack Heikell and Sabian Coomber-Nickerson"
 credits="credits"
 
 #Startup sequence
 print('#####################################################################')
 print('                              HOMEGUARD                              ')
 print('                              (C) 2014                               ')
-print(                             'Version ' + current_version              )
+print(                               'Version ' + current_version            )
 print('#####################################################################')
 time.sleep(1)
 print("Loading 10%")
@@ -64,7 +64,7 @@ time.sleep(0.25)
 print("Loading 90%")
 time.sleep(0.25)
 print("Loading 99%")
-time.sleep(5)
+time.sleep(0.25)
 print("Loaded Vitanoxi Verstion " + current_version)
 time.sleep(1)
 print('Please enter your Password.')
