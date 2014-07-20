@@ -24,7 +24,7 @@ import termcolor
 localtime = time.asctime( time.localtime(time.time()) )
 enterpassword='pass'
 #time = now.strftime("%Y-%m-%d %H:%M")
-current_version="1.6"
+current_version="Beta 1.6"
 developers="Bryce Simpson, Jack Heikell and Sabian Coomber-Nickerson"
 
 #Startup sequence
@@ -34,7 +34,7 @@ print('                              (C) 2014                               ')
 print(                             'Version: ' + current_version             )
 print('#####################################################################')
 time.sleep(1)
-print("Loading 10%")
+#print("Loading 10%")
 time.sleep(0.25)
 print("Loading 20%")
 time.sleep(0.25)
