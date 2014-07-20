@@ -25,7 +25,7 @@ localtime = time.asctime( time.localtime(time.time()) )
 enterpassword='pass'
 #time = now.strftime("%Y-%m-%d %H:%M")
 current_version="1.6"
-developers="Jack Heikell, Bryce Simpson and Sabian Coomber-Nickerson"
+developers="Bryce Simpson, Jack Heikell and Sabian Coomber-Nickerson"
 
 #Startup sequence
 print('#####################################################################')
