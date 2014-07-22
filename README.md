@@ -1,4 +1,4 @@
-Homeguard Version 1.5
+Homeguard Version 1.6
 =========
 
 A Python project for guarding the home, Uses webcams.
