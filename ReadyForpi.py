@@ -16,153 +16,149 @@
 #import getpass
 import time
 import logging
-import datetime
-import termcolor
-from termcolor import colored
 
 #Variables
-now = datetime.datetime.now()
-#localtime = time.asctime( time.localtime(time.time()) )
-enterpassword='pass'
-version1='HomeGuard Version 1.1'
-laser='laser'
-light='light'
-upload='upload'
-opengui='opengui'
-help='help'
-egg='egg'
-exitprogram='exitprogram'
-version='version'
-time = now.strftime("%Y-%m-%d %H:%M")
+#now = datetime.datetime.now()
+localtime = time.asctime( time.localtime(time.time()) )
+dapassword='pass'
+#time = now.strftime("%Y-%m-%d %H:%M")
+beta="False"
+version="version"
+current_version="1.5"
+Developer="False"
+
+#Group Define
+if beta == ("True"):
+        Developer = "True"
+        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+        logging.debug("Developer logged in at: " + localtime)
 
 #Startup sequence
 print('#####################################################################')
 print('                              HOMEGUARD                              ')
 print('                              (C) 2014                               ')
-print('                             Version 1.5                             ')
+print(                               'Version '  + current_version           )
 print('#####################################################################')
 time.sleep(1)
-print("Loading 10%")
-time.sleep(0.25)
-print("Loading 20%")
-time.sleep(0.25)
-print("Loading 30%")
-time.sleep(0.25)
-print("Loading 40%")
-time.sleep(0.25)
-print("Loading 50%")
-time.sleep(0.25)
-print("Loading 60%")
-time.sleep(0.25)
-print("Loading 70%")
-time.sleep(0.25)
-print("Loading 80%")
-time.sleep(0.25)
-print("Loading 90%")
-time.sleep(0.25)
-print("Loading 99%")
-time.sleep(5)
-print("Loaded Vitanoxi ")
-time.sleep(1)
-print('Please enter your Password.')
-password=input()
-
-if password == (enterpassword):
-        print('Please wait')
-        time.sleep(2)
-        print('')
-        print('Correct, logging in.')
-        time.sleep(1.5)
-        print('Welcome User')
-        time.sleep(2)
-#Logs people that have logged into the console
-        logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("User logged in at " + time)
-
-
-if password != ("pass"):
-        print('Please wait')
-        time.sleep(2)
-        print('')
-        print('Incorrect, closing program.')
-        time.sleep(1.5)
-        exit("Closed")
+if beta != ("True"):
+        print("Loading 10%")
+        time.sleep(0.25)
+        print("Loading 20%")
+        time.sleep(0.25)
+        print("Loading 30%")
+        time.sleep(0.25)
+        print("Loading 40%")
+        time.sleep(0.25)
+        print("Loading 50%")
+        time.sleep(0.25)
+        print("Loading 60%")
+        time.sleep(0.25)
+        print("Loading 70%")
+        time.sleep(0.25)
+        print("Loading 80%")
+        time.sleep(0.25)
+        print("Loading 90%")
+        time.sleep(0.25)
+        print("Loading 99%")
+        time.sleep(5)
         
+if beta != ("True"):
+        print("Loaded Vitanoxi Verstion " + current_version)
+        time.sleep(1)
+        print('Please enter your Password.')
+        password=input()
+        if password == (dapassword):
+                print('Please wait')
+                time.sleep(2)
+                print('Correct, logging in.')
+                time.sleep(1.5)
+                print('Welcome User')
+                time.sleep(2)
+#Logs people that have logged into the console
+                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                logging.debug("User logged in at: " + localtime)
+        if password != (dapassword):
+                        print('Please wait')
+                        time.sleep(2)
+                        print('')
+                        print('Incorrect, closing program.')
+                        time.sleep(1.5)
+                        exit("Closed")
+
 #Group Command Structure:
 #Admin
 #Mod
 #User
 
 #executes commands when entered
-print('Welcome to your HomeGuard command console by Vitanoxi')
-print('Please input your command below.')
+if beta != ("True"):
+        print('Welcome to your HomeGuard command console by Vitanoxi')
+        print('Please input your command')
+if beta != ("False"):
+        print('Welcome Developer')
+        print('Please input your command')
+
+#def _mainloop_():
 
 command=input()
 
 #Put this in to make it simple
 
-if command !=(laser or light or upload or opengui or help or egg or exitprogram or version):
-        print('Please Wait')
-        time.sleep(1.5)
-        print('No Such Command Please Try Again')
-        time.sleep(2)
-        command=input()        
-
-
-if command == (laser.lower):
+if command == ("laser"):
         print('Please wait')
         time.sleep(1.5)
         execfile("laser.py")
         print('Executing command')
-        logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the laser command " + time)
+        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+        logging.debug("Someone has used the laser command: " + localtime)
         time.sleep(2)
         command=input()
-
-if command == (light.lower):
+        
+if command == ("light"):
         print('Please wait')
         time.sleep(1.5)
         execfile("light.py")
         print('Executing command')
-        logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the light command " + time)
+        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+        logging.debug("Someone has used the light command: " + localtime)
         time.sleep(2)
         command=input()
-
-if command == (upload.lower):
+        
+if command == ("upload"):
         print('Please wait')
         time.sleep(1.5)
         execfile("upload.py")
         print('Executing command')
-        logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the upload command "  + time)
+        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+        logging.debug("Someone has used the upload command: "  + localtime)
         time.sleep(2)
         command=input()
 
-if command == (opengui.lower):
+if command == ("opengui"):
         print('Please wait')
         time.sleep(1.5)
         execfile("gui.py")
         print('Executing command')
-        logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the open gui command "  + time)
+        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+        logging.debug("Someone has used the open gui command: "  + localtime)
         time.sleep(2)
         command=input()
 
-if command == (help.lower):
-        print('Available commands: admin, mod, laser, upload, opengui, help, exit, version')  #Says available commands
-        logging.basicConfig(filename='Logging/log.log',level=logging.DEBUG)
-        logging.debug("Someone has used the help command " + time)
+if command == ("help"):
+        print('admin, mod, laser, upload, opengui, help, exit, version')
+        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+        logging.debug("Someone has used the help command: " + localtime)
         time.sleep(2)
         command=input()
 
-
-if command == (egg):
+if command == ("egg"):
         print('Congrats you have found the easter egg here is your prize!')
+        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+        logging.debug("SOMEONE HAS FOUND THE EASTER EGG! ")
         time.sleep(5)
         exit()
-
-if command == (exitprogram.lower):
+ 
+if command == ("exitprogram"):
         print('Please wait')
         time.sleep(1.5)
         print('Exiting Vitanoxi HomeGuard Console')
@@ -177,3 +173,28 @@ if command == (exitprogram.lower):
         print('1')
         time.sleep(1)
         exit("Closed")
+
+if command == ("version"):
+        print('#####################################################################')
+        print('                              HOMEGUARD                              ')
+        print('                              (C) 2014                               ')
+        print(                               'Version ' + current_version            )
+        print('#####################################################################')
+
+if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or "exitprogram" or "version"):
+        print('Incorrect command input!')
+
+if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or "exitprogram" or "version") and Developer == ("True"):
+        print('NIGGA YOU FAIL AT LIFE!')
+        
+        
+        
+
+        
+        
+
+        
+
+        
+        
+        
