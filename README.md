@@ -12,7 +12,7 @@ A Python project for guarding the home, Uses webcams.
 To Do
 =========
 
-- [ ] Implement Dropbox
+- [✓] Implement Dropbox
 - [ ] Create camera
 - [ ] Allow output photos
 - [ ] Create motion tracker
