@@ -1,3 +1,12 @@
+
+if Sabians_Ideas == (Amazing):
+         print('Sabian Has amazing Ideas')
+         else
+         print('Somethings Wrong')
+
+######################################################################
+
+
 # Copyright (C) 2014 Vitanoxi <Vitanoxi@gmail.com>
 #  _    _                                                _ 
 # | |  | |                                              | |
@@ -8,7 +17,7 @@
 #                               __/ |                      
 #                              |___/                 
 
-
+##########################################################################
          
 if command == (reload):
 time.sleep(1)
@@ -35,4 +44,6 @@ time.sleep(5)
 print("Loaded Vitanoxi Verstion " + current_version)
 time.sleep(1)
 
-        
+###############################################################
+
+
