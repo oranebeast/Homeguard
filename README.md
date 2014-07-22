@@ -12,9 +12,9 @@ A Python project for guarding the home, Uses webcams.
 To Do
 =========
 
-- [✓] Implement Dropbox
+- [50%] Implement Dropbox
 - [ ] Create camera
 - [ ] Allow output photos
 - [ ] Create motion tracker
 - [ ] Possbile SOS command
-- [ ] Promote Sabian to Leader
+- [ ] Have a general election
