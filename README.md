@@ -17,3 +17,4 @@ To Do
 - [ ] Allow output photos
 - [ ] Create motion tracker
 - [ ] Possbile SOS command
+- [ ] Promote Sabian to Leader
