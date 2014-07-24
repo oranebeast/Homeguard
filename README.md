@@ -18,3 +18,4 @@ To Do
 - [ ] Create motion tracker
 - [ ] Possbile SOS command
 - [ ] Have a general election
+- [100%] Make some cheese
