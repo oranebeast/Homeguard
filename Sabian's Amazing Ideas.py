@@ -45,5 +45,8 @@ print("Loaded Vitanoxi Verstion " + current_version)
 time.sleep(1)
 
 ###############################################################
-
+#                  There are two rules for success...
+#                  1,
+#                  Never reveal everything you know.
+###############################################################
 
