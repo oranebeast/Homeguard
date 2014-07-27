@@ -48,7 +48,5 @@ time.sleep(1)
 #                  There are two rules for success...
 #                  1,
 #                  Never reveal everything you know.
-#                  2,
-#                  Never be named aftr a drumset
 ###############################################################
 
