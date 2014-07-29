@@ -24,7 +24,7 @@ dapassword='pass'
 #time = now.strftime("%Y-%m-%d %H:%M")
 beta="False"
 version="version"
-current_version="1.5"
+current_version="1.6 Stable"
 Developer="False"
 
 #Group Define
@@ -190,11 +190,4 @@ if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or
         
         
 
-        
-        
-
-        
-
-        
-        
         
