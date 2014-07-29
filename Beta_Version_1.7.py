@@ -22,9 +22,9 @@ import logging
 localtime = time.asctime( time.localtime(time.time()) )
 dapassword='pass'
 #time = now.strftime("%Y-%m-%d %H:%M")
-beta="False"
+beta="True"
 version="version"
-current_version="1.5"
+current_version="1.7 Beta"
 Developer="False"
 
 #Group Define
