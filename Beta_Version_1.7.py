@@ -18,20 +18,21 @@ import time
 import logging
 
 #Variables
-#now = datetime.datetime.now()
 localtime = time.asctime( time.localtime(time.time()) )
-dapassword='pass'
-#time = now.strftime("%Y-%m-%d %H:%M")
+dapassword="pass"
 beta="True"
 version="version"
 current_version="1.7 Beta"
 Developer="False"
+adminpass="admin"
+file = open('Logging/Logs.log', 'r')
 
 #Group Define
 if beta == ("True"):
         Developer = "True"
         logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
         logging.debug("Developer logged in at: " + localtime)
+
 
 #Startup sequence
 print('#####################################################################')
@@ -74,13 +75,21 @@ if beta != ("True"):
                 time.sleep(1.5)
                 print('Welcome User')
                 time.sleep(2)
-#Logs people that have logged into the console
                 logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
                 logging.debug("User logged in at: " + localtime)
-        if password != (dapassword):
+        if password == (adminpass):
+                Admin="True"
+                print('Please wait')
+                time.sleep(2)
+                print('Correct, logging in.')
+                time.sleep(1.5)
+                print('Welcome Admin')
+                time.sleep(2)
+                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                logging.debug("Admin logged in at: " + localtime)        
+        if password != (dapassword or adminpass):
                         print('Please wait')
                         time.sleep(2)
-                        print('')
                         print('Incorrect, closing program.')
                         time.sleep(1.5)
                         exit("Closed")
@@ -91,16 +100,23 @@ if beta != ("True"):
 #User
 
 #executes commands when entered
-if beta != ("True"):
+if beta == ("False"):
         print('Welcome to your HomeGuard command console by Vitanoxi')
         print('Please input your command')
-if beta != ("False"):
+if beta == ("True"):
         print('Welcome Developer')
+        print('Please input your command')
+if Admin == ("True"):
+        print('Welcome to Admin. You are in control)
         print('Please input your command')
 
 #def _mainloop_():
 
 command=input()
+
+#Admin commands
+if command ==("log") and Admin ==("True"):
+        print file.read()
 
 #Put this in to make it simple
 
