@@ -25,6 +25,7 @@ version="version"
 current_version="1.7 Beta"
 Developer="False"
 adminpass="admin"
+Admin="False"
 file = open('Logging/Logs.log', 'r')
 
 #Group Define
