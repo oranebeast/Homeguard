@@ -1,4 +1,4 @@
-Homeguard Version 1.6
+Homeguard (Stable 1.6) (Beta 1.7)
 =========
 
 A Python project for guarding the home, Uses webcams.
@@ -16,5 +16,8 @@ To Do
 - [ ] Create camera
 - [ ] Allow output photos
 - [ ] Create motion tracker
-- [ ] Possbile SOS command
 - [ ] Have a general election
+- [ ] Test camera
+- [ ] Image compresser?
+- [ ] Release test version
+- [ ] Install Librarys
