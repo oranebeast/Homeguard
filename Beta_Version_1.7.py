@@ -26,6 +26,7 @@ current_version="1.7 Beta"
 Developer="False"
 adminpass="admin"
 Admin="False"
+End="False"
 file = open('Logging/Logs.log', 'r')
 
 #Group Define
@@ -197,12 +198,29 @@ if command == ("version"):
         print('                              (C) 2014                               ')
         print(                               'Version ' + current_version            )
         print('#####################################################################')
-
+        
 if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or "exitprogram" or "version") and Developer != ("True"):
         print('Incorrect command input!')
+        End="True"
 
 if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or "exitprogram" or "version") and Developer == ("True"):
         print('NIGGA YOU FAIL AT LIFE!')
+        End="True"
+        
+if End == ("True"):
+        time.sleep(5)
+        print('Due to tech problems we regret to inform you that you will have to restart the program!')
+        time.sleep(2)
+        print('Exit? Y or N')
+        exit=input()
+        if exit == ("Y" or "yes" or "y" or "Yes"):
+                print('Closing')
+                time.sleep(2)
+                exit("Closed")
+        if exit == ("N" or "no" or "n" or "No"):
+                print('Ok. Thats fine do it yourself!')
+                
+        
         
         
         
