@@ -198,7 +198,7 @@ if command == ("version"):
         print(                               'Version ' + current_version            )
         print('#####################################################################')
 
-if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or "exitprogram" or "version"):
+if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or "exitprogram" or "version") and Developer != ("True"):
         print('Incorrect command input!')
 
 if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or "exitprogram" or "version") and Developer == ("True"):
