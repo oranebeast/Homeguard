@@ -34,12 +34,15 @@ election=input()
 if election == ("Bryce" or "bryce"):
         logging.basicConfig(filename='RESULTS.log',level=logging.DEBUG)
         logging.debug("Bryce has been picked as CEO")
+        print('Thank you! You have voted for Bryce!')
 
 if election == ("Jack" or "jack"):
         logging.basicConfig(filename='RESULTS.log',level=logging.DEBUG)
         logging.debug("Jack has been picked as CEO")
+        print('Thank you! You have voted for Jack!')
 
 if election == ("Sabian" or "sabian"):
         logging.basicConfig(filename='RESULTS.log',level=logging.DEBUG)
-        logging.debug("Sabian has been picked as CEO")        
+        logging.debug("Sabian has been picked as CEO")
+        print('Thank you! You have voted for Sabian!')
         
