@@ -111,16 +111,19 @@ if beta == ("True"):
 if Admin == ("True"):
         print('Welcome to Admin. You are in control)
         print('Please input your command')
-
+        
+#Below is the loop which is broken
+''''
 #def _mainloop_():
+'''
 
 command=input()
 
 #Admin commands
-if command ==("log") and Admin ==("True"):
+if command == ("log") and Admin ==("True"):
         print file.read()
 
-#Put this in to make it simple
+#User commands
 
 if command == ("laser"):
         print('Please wait')
@@ -192,18 +195,22 @@ if command == ("exitprogram"):
         time.sleep(1)
         exit("Closed")
 
-if command == ("version"):
+if command == ("info"):
         print('#####################################################################')
         print('                              HOMEGUARD                              ')
         print('                              (C) 2014                               ')
         print(                               'Version ' + current_version            )
+        print('                                                                     ')
+        print('CEO/Developer: Bryce Simpson                                         ')
+        print('Lead Developer: Jack Heikel                                          ')
+        print('Developer: Sabian Coomber-Nickerson                                  ')
         print('#####################################################################')
         
-if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or "exitprogram" or "version") and Developer != ("True"):
+if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or "exitprogram" or "info") and Developer != ("True"):
         print('Incorrect command input!')
         End="True"
 
-if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or "exitprogram" or "version") and Developer == ("True"):
+if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or "exitprogram" or "info") and Developer == ("True"):
         print('NIGGA YOU FAIL AT LIFE!')
         End="True"
         
