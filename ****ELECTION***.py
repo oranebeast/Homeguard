@@ -17,7 +17,7 @@ if info == ("info"):
         print('ranging from the 36th funnest game in a 2500 people competition, and ')
         print('plenty of othe un-released titles, I have also made great design changes')
         print('To home guard and many other games (See RoboFor by crefossus) I am also')
-        print('a well followed twitter guy with almost 50 followers! SUCH WOW! ')
+        print('a well followed twitter guy with almost 50 followers!')
         print('Id be a great leader because of my keen legal sense and strategic ideas')
         print('')
         print('Sabian:')
