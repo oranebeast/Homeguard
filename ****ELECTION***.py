@@ -7,15 +7,28 @@ if info == ("info"):
         print('Bryce:')
         print('')
         print('Hi, i have been coding for numerous years. I have made games,')
-        print(' software and programs such as this script you are looking at now.')
+        print('software and programs such as this script you are looking at now.')
         print('I beleive that i would be a good ceo because I have completed the BP')
         print('business challenge and i know what it takes to run a business.')
         print('')
         print('')
+        print('Jack:')
         print('')
+        print('')
+        print('')
+        print('')
+        print('')
+        print('')
+        print('')
+        print('Sabian:')
+        print('')
+        print('')
+        print('')
+        print('')
+        print('')
+        time.sleep(5)
+        print('Now you know all about us please input a name to vote for your selected person!')
         
-        
-
 election=input()
 
 if election == ("Bryce" or "bryce"):
