@@ -16,7 +16,7 @@ if info == ("info"):
         print('Im Jack and I am known to be the tech guy, Ive made plenty of games')
         print('ranging from the 36th funnest game in a 2500 people competition, and ')
         print('plenty of othe un-released titles, I have also made great design changes')
-        print('To home guard and many other games (See RoboFor by crefossus).')
+        print('To home guard and many other games (See RoboForm by crefossus).')
         print('Id be a great leader because of my keen legal sense and strategic ideas')
         print('')
         print('')
@@ -47,4 +47,6 @@ if election == ("Sabian" or "sabian"):
         logging.basicConfig(filename='RESULTS.log',level=logging.DEBUG)
         logging.debug("Sabian has been picked as CEO")
         print('Thank you! You have voted for Sabian!')
+        
+print('This is the end of the survey, Thank you for your time.'
         
