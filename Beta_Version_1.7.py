@@ -1,6 +1,5 @@
 # Copyright (C) 2014 Vitanoxi <Vitanoxi@gmail.com>
 
-#Login
 #  _    _                                                _ 
 # | |  | |                                              | |
 # | |__| | ___  _ __ ___   ___  __ _ _   _  __ _ _ __ __| |
