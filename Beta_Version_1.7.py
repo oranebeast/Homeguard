@@ -157,7 +157,7 @@ if command == ("upload"):
 if command == ("opengui"):
         print('Please wait')
         time.sleep(1.5)
-        execfile("gui.py")
+        execfile("dropbox_shorts.py")
         print('Executing command')
         logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
         logging.debug("Someone has used the open gui command: "  + localtime)
