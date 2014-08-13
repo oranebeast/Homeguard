@@ -121,6 +121,16 @@ command=input()
 #Admin commands
 if command == ("log") and Admin ==("True"):
         print file.read()
+if command == ("help") and Admin == ("True"):
+print('Commands:')
+        print('mod\nlaser\nupload\nopengui\nhelp\nexitprogram\nversion')
+        print('')
+        print('Admin Commands:')
+        print('log\nhelp')
+        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+        logging.debug("Someone has used the help command: " + localtime)
+        time.sleep(2)
+        command=input()        
 
 #User commands
 
@@ -164,8 +174,9 @@ if command == ("opengui"):
         time.sleep(2)
         command=input()
 
-if command == ("help"):
-        print('admin, mod, laser, upload, opengui, help, exit, version')
+if command == ("help") and Admin == ("False"):
+        print('Commands:')
+        print('admin\nmod\nlaser\nupload\nopengui\nhelp\nexitprogram\nversion')
         logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
         logging.debug("Someone has used the help command: " + localtime)
         time.sleep(2)
