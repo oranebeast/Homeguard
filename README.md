@@ -16,7 +16,6 @@ To Do
 - [ ] Create camera
 - [ ] Allow output photos
 - [ ] Create motion tracker
-- [ ] Have a general election
 - [ ] Test camera
 - [ ] Image compresser?
 - [ ] Release test version
