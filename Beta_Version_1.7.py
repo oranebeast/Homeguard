@@ -104,7 +104,7 @@ if beta != ("True"):
 if beta == ("False"):
         print('Welcome to your HomeGuard command console by Vitanoxi')
         print('Please input your command')
-if beta == ("True"):
+        else
         print('Welcome Developer')
         print('Please input your command')
 if Admin == ("True"):
@@ -200,9 +200,9 @@ if command == ("info"):
         print('                              (C) 2014                               ')
         print(                               'Version ' + current_version            )
         print('                                                                     ')
-        print('CEO/Developer: Bryce Simpson                                         ')
-        print('Lead Developer: Jack Heikel                                          ')
-        print('Developer: Sabian Coomber-Nickerson                                  ')
+        print('CEO/JrDev: Sabian Coomber-Nickerson                                  ')
+        print('Project Manager/Developer: Bryce Simpson                             ')
+        print('Developer: Jack Heikel                                               ')
         print('#####################################################################')
         
 if command != ("laser" or "light" or "upload" or "opengui" or "help" or "egg" or "exitprogram" or "info") and Developer != ("True"):
