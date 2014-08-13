@@ -20,3 +20,4 @@ To Do
 - [ ] Image compresser?
 - [ ] Release test version
 - [ ] Install Librarys
+- [ ] Finish to do list
