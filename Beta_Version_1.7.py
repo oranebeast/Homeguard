@@ -63,7 +63,7 @@ if beta != ("True"):
         time.sleep(0.25)
         print("Loading 99%")
         time.sleep(5)
-        
+#Third Chance        
 if beta != ("True"):
         print("Loaded Vitanoxi Verstion " + current_version)
         time.sleep(1)
@@ -90,9 +90,66 @@ if beta != ("True"):
                 logging.debug("Admin logged in at: " + localtime)        
         if password != (dapassword or adminpass):
                         print('Please wait')
+                        time.sleep(2)                        
+                        print('Incorrect Password You have TWO Attempts Left')
+                        time.sleep(1)
+#Second Chance
+                        elif beta != ("True")
+        print('Please enter your Password again.')
+        password=input()
+        if password == (dapassword):
+                print('Please wait')
+                time.sleep(2)
+                print('Correct, logging in.')
+                time.sleep(1.5)
+                print('Welcome User')
+                time.sleep(2)
+                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                logging.debug("User logged in at: " + localtime)
+        if password == (adminpass):
+                Admin="True"
+                print('Please wait')
+                time.sleep(2)
+                print('Correct, logging in.')
+                time.sleep(1.5)
+                print('Welcome Admin')
+                time.sleep(2)
+                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                logging.debug("Admin logged in at: " + localtime)        
+        if password != (dapassword or adminpass):
+                        print('Please wait')
                         time.sleep(2)
-                        print('Incorrect, closing program.')
-                        time.sleep(1.5)
+                        print('Incorrect Password You have ONE Attempts Left')
+                        time.sleep(1)
+#Final Chance
+                        elif beta != ("True")
+        print('Please enter your Password again.')
+        password=input()
+        if password == (dapassword):
+                print('Please wait')
+                time.sleep(2)
+                print('Correct, logging in.')
+                time.sleep(1.5)
+                print('Welcome User')
+                time.sleep(2)
+                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                logging.debug("User logged in at: " + localtime)
+        if password == (adminpass):
+                Admin="True"
+                print('Please wait')
+                time.sleep(2)
+                print('Correct, logging in.')
+                time.sleep(1.5)
+                print('Welcome Admin')
+                time.sleep(2)
+                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                logging.debug("Admin logged in at: " + localtime)        
+        if password != (dapassword or adminpass):
+                        print('Please wait')
+                        time.sleep(2)
+                        print('Incorrect Password You have NO MORE Attempts Left')
+                        time.sleep(1)
+                        print('Shutting Down')
                         exit("Closed")
 
 #Group Command Structure:
