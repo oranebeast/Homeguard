@@ -20,4 +20,4 @@ To Do
 - [ ] Image compresser?
 - [ ] Release test version
 - [ ] Install Librarys
-- [ ] Finish to do list
+- [6.25%] Finish to do list
