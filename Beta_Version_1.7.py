@@ -26,6 +26,8 @@ Developer="False"
 adminpass="admin"
 Admin="False"
 End="False"
+incorrect1="False"
+incorrect2 ="False"
 file = open('Logging/Logs.log', 'r')
 
 #Group Define
@@ -93,8 +95,9 @@ if beta != ("True"):
                         time.sleep(2)                        
                         print('Incorrect Password You have TWO Attempts Left')
                         time.sleep(1)
-#Second Chance
-                        elif beta != ("True")
+                        incorrect1="True"
+#Second Chance 
+        if incorrect1 == ("True")
         print('Please enter your Password again.')
         password=input()
         if password == (dapassword):
@@ -121,8 +124,9 @@ if beta != ("True"):
                         time.sleep(2)
                         print('Incorrect Password You have ONE Attempts Left')
                         time.sleep(1)
-#Final Chance
-                        elif beta != ("True")
+                        incorrect2="True"
+#Final Chance   
+        if incorrect2 == ("True")
         print('Please enter your Password again.')
         password=input()
         if password == (dapassword):
@@ -157,6 +161,8 @@ if beta != ("True"):
 #Mod
 #User
 
+#while loop == ("True")
+###########################################COMMANDS#####################################################################
 #executes commands when entered
 if beta == ("False"):
         print('Welcome to your HomeGuard command console by Vitanoxi')
