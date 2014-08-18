@@ -173,7 +173,7 @@ if beta != ("True"):
 
 
 ###########################################COMMANDS#####################################################################
-while Loop == ("True")
+while Loop == ("True"):
         #executes commands when entered
         if beta == ("False"):
                 print('Welcome to your HomeGuard command console by Vitanoxi')
