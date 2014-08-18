@@ -103,9 +103,9 @@ if beta != ("True"):
                         time.sleep(1)
                         incorrect1="True"
 #Second Chance 
-        if incorrect1 == ("True")
-        print('Please enter your Password again.')
-        password=input()
+        if incorrect1 == ("True"):
+                print('Please enter your Password again')
+                password=input()
         if password == (dapassword):
                 print('Please wait')
                 time.sleep(2)
@@ -134,9 +134,9 @@ if beta != ("True"):
                         time.sleep(1)
                         incorrect2="True"
 #Final Chance   
-        if incorrect2 == ("True")
-        print('Please enter your Password again.')
-        password=input()
+        if incorrect2 == ("True"):
+                print('Please enter your Password again.')
+                password=input()
         if password == (dapassword):
                 print('Please wait')
                 time.sleep(2)
