@@ -173,23 +173,23 @@ if beta != ("True"):
 if beta == ("False"):
         print('Welcome to your HomeGuard command console by Vitanoxi')
         print('Please input your command')
+        command=input()
 if beta == ("True"):
         print('Welcome Developer')
         print('Please input your command')
+        command=input()
 if Admin == ("True") and beta == ("False"):
         print('Welcome to Admin. You are in control)
         print('Please input your command')
+        command=input()
 if Admin == ("False") or beta == ("True"):
         print('Beta is enabled please disable it and try again!')
         time.sleep(5)
         exit("Closed")
         
                         
-
 #################################################ADMIN COMMANDS##########################################################
 while Loop == ("True"):
-        command=input()
-        #Admin commands
         if command == ("log") and Admin ==("True"):
                 print file.read()
                 if command == ("help") and Admin == ("True"):
@@ -252,11 +252,14 @@ while Loop == ("True"):
                                 print('Project Manager/Developer: Bryce Simpson                             ')
                                 print('Developer: Jack Heikel                                               ')
                                 print('#####################################################################')
+                                command=input()
                         if command != ("opengui" or "help" or "egg" or "exitprogram" or "info") and Developer != ("True"):
                                 print('Incorrect command input!')
+                                command=input()
                                 #End="True"
                         if command != ("opengui" or "help" or "egg" or "exitprogram" or "info") and Developer == ("True"):
                                 print('NIGGA YOU FAIL AT LIFE!')
+                                command=input()
                                 #End="True"
 ''''
                         if End == ("True"):
