@@ -104,61 +104,61 @@ if beta != ("True"):
                         incorrect1="True"
 #Second Chance 
         if incorrect1 == ("True"):
-                print('Please enter your Password again')
-                password=input()
-        if password == (dapassword):
-                print('Please wait')
-                time.sleep(2)
-                print('Correct, logging in.')
-                time.sleep(1.5)
-                print('Welcome User')
-                time.sleep(2)
-                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-                logging.debug("User logged in at: " + localtime)
-                Loop="True"
-        if password == (adminpass):
-                Admin="True"
-                print('Please wait')
-                time.sleep(2)
-                print('Correct, logging in.')
-                time.sleep(1.5)
-                print('Welcome Admin')
-                time.sleep(2)
-                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-                logging.debug("Admin logged in at: " + localtime)
-                Loop="True"
-        if password != (dapassword or adminpass):
+                print('Please enter your Password again.')
+                password1=input()
+                if password1 == (dapassword):
                         print('Please wait')
                         time.sleep(2)
-                        print('Incorrect Password You have ONE Attempts Left')
+                        print('Correct, logging in.')
+                        time.sleep(1.5)
+                        print('Welcome User')
+                        time.sleep(2)
+                        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                        logging.debug("User logged in at: " + localtime)
+                        Loop="True"
+                if password1 == (adminpass):
+                        Admin="True"
+                        print('Please wait')
+                        time.sleep(2)
+                        print('Correct, logging in.')
+                        time.sleep(1.5)
+                        print('Welcome Admin')
+                        time.sleep(2)
+                        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                        logging.debug("Admin logged in at: " + localtime) 
+                        Loop="True"
+                if password1 != (dapassword or adminpass):
+                        print('Please wait')
+                        time.sleep(2)
+                        print('Incorrect Password You have ONE MORE Attempts Left')
                         time.sleep(1)
                         incorrect2="True"
 #Final Chance   
         if incorrect2 == ("True"):
                 print('Please enter your Password again.')
-                password=input()
-        if password == (dapassword):
-                print('Please wait')
-                time.sleep(2)
-                print('Correct, logging in.')
-                time.sleep(1.5)
-                print('Welcome User')
-                time.sleep(2)
-                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-                logging.debug("User logged in at: " + localtime)
-                Loop="True"
-        if password == (adminpass):
-                Admin="True"
-                print('Please wait')
-                time.sleep(2)
-                print('Correct, logging in.')
-                time.sleep(1.5)
-                print('Welcome Admin')
-                time.sleep(2)
-                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-                logging.debug("Admin logged in at: " + localtime) 
-                Loop="True"
-        if password != (dapassword or adminpass):
+                password2=input()
+                if password2 == (dapassword):
+                        print('Please wait')
+                        time.sleep(2)
+                        print('Correct, logging in.')
+                        time.sleep(1.5)
+                        print('Welcome User')
+                        time.sleep(2)
+                        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                        logging.debug("User logged in at: " + localtime)
+                        Loop="True"
+                if password2 == (adminpass):
+                        Admin="True"
+                        print('Please wait')
+                        time.sleep(2)
+                        print('Correct, logging in.')
+                        time.sleep(1.5)
+                        print('Welcome Admin')
+                        time.sleep(2)
+                        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                        logging.debug("Admin logged in at: " + localtime) 
+                        Loop="True"
+                if password2 != (dapassword or adminpass):
                         print('Please wait')
                         time.sleep(2)
                         print('Incorrect Password You have NO MORE Attempts Left')
@@ -173,19 +173,20 @@ if beta != ("True"):
 if beta == ("False"):
         print('Welcome to your HomeGuard command console by Vitanoxi')
         print('Please input your command')
-        else
+if beta == ("True"):
         print('Welcome Developer')
         print('Please input your command')
 if Admin == ("True") and beta == ("False"):
         print('Welcome to Admin. You are in control)
         print('Please input your command')
-        else
+if Admin == ("False") or beta == ("True"):
         print('Beta is enabled please disable it and try again!')
         time.sleep(5)
         exit("Closed")
+        
                         
 
-###########################################COMMANDS#####################################################################
+#################################################ADMIN COMMANDS##########################################################
 while Loop == ("True"):
         command=input()
         #Admin commands
@@ -200,8 +201,9 @@ while Loop == ("True"):
                         logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
                         logging.debug("Someone has used the help command: " + localtime)
                         time.sleep(2)
-                        command=input()        
-                        #User commands
+                        command=input()
+                        
+####################################################USER COMMANDS#######################################################
                         
                         if command == ("opengui"):
                                 print('Please wait')
