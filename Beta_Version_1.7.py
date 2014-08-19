@@ -227,7 +227,7 @@ if Admin == ("False") or beta == ("True"):
 while Loop == ("True"):
         if command == ("log") and Admin ==("True"):
                 print file.read()
-                if command == ("help") and Admin == ("True"):
+                if command == ("help") and Admin == ("True") and Developer == ("False") and beta == ("False"):
                         print('Commands:')
                         print('mod\nlaser\nupload\nopengui\nhelp\nexitprogram\nversion')
                         print('')
@@ -264,7 +264,7 @@ while Loop == ("True"):
                                 logging.debug("Someone has used the open gui command: "  + localtime)
                                 time.sleep(2)
                                 command=input()
-                        if command == ("help") and Admin == ("False"):
+                        if command == ("help") and Admin == ("False") and Developer == ("False"):
                                 print('Commands:')
                                 print('admin\nmod\nlaser\nupload\nopengui\nhelp\nexitprogram\nversion')
                                 logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
