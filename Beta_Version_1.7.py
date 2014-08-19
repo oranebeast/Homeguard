@@ -170,25 +170,23 @@ if beta != ("True"):
 #Admin
 #Mod
 #User
-
+if beta == ("False"):
+        print('Welcome to your HomeGuard command console by Vitanoxi')
+        print('Please input your command')
+        else
+        print('Welcome Developer')
+        print('Please input your command')
+if Admin == ("True") and beta == ("False"):
+        print('Welcome to Admin. You are in control)
+        print('Please input your command')
+        else
+        print('Beta is enabled please disable it and try again!')
+        time.sleep(5)
+        exit("Closed")
+                        
 
 ###########################################COMMANDS#####################################################################
 while Loop == ("True"):
-        #executes commands when entered
-        if beta == ("False"):
-                print('Welcome to your HomeGuard command console by Vitanoxi')
-                print('Please input your command')
-                else
-                print('Welcome Developer')
-                print('Please input your command')
-                if Admin == ("True"):
-                        print('Welcome to Admin. You are in control)
-                        print('Please input your command')
-                        
-        #Below is the loop which is broken
-        ''''
-        #def _mainloop_():
-        '''
         command=input()
         #Admin commands
         if command == ("log") and Admin ==("True"):
