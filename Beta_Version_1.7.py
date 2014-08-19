@@ -28,6 +28,7 @@ version="version"
 current_version="1.7 Beta"
 Developer="False"
 adminpass="admin"
+devpass="dev"
 Admin="False"
 End="False"
 incorrect1="False"
@@ -36,9 +37,8 @@ file = open('Logging/Logs.log', 'r')
 
 #Group Define
 if beta == ("True"):
-        Developer = "True"
         logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-        logging.debug("Developer logged in at: " + localtime)
+        logging.debug("Beta Tester logged in at: " + localtime)
 
 
 #Startup sequence
@@ -96,7 +96,18 @@ if beta != ("True"):
                 logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
                 logging.debug("Admin logged in at: " + localtime)
                 Loop="True"
-        if password != (dapassword or adminpass):
+        if password == (devpass):
+                Developer="True"
+                print('Please wait')
+                time.sleep(2)
+                print('Correct, logging in.')
+                time.sleep(1.5)
+                print('Welcome Developer')
+                time.sleep(2)
+                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                logging.debug("Developer logged in at: " + localtime)
+                Loop="True"        
+        if password != (dapassword) or (adminpass) or (devpass):
                         print('Please wait')
                         time.sleep(2)                        
                         print('Incorrect Password You have TWO Attempts Left')
@@ -127,7 +138,18 @@ if beta != ("True"):
                         logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
                         logging.debug("Admin logged in at: " + localtime) 
                         Loop="True"
-                if password1 != (dapassword or adminpass):
+                if password1 == (devpass):
+                        Developer="True"
+                        print('Please wait')
+                        time.sleep(2)
+                        print('Correct, logging in.')
+                        time.sleep(1.5)
+                        print('Welcome Developer')
+                        time.sleep(2)
+                        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                        logging.debug("Developer logged in at: " + localtime)
+                        Loop="True"        
+                if password1 != (dapassword) or (adminpass) or (devpass):
                         print('Please wait')
                         time.sleep(2)
                         print('Incorrect Password You have ONE MORE Attempts Left')
@@ -158,7 +180,18 @@ if beta != ("True"):
                         logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
                         logging.debug("Admin logged in at: " + localtime) 
                         Loop="True"
-                if password2 != (dapassword or adminpass):
+                if password2 == (devpass):
+                        Developer="True"
+                        print('Please wait')
+                        time.sleep(2)
+                        print('Correct, logging in.')
+                        time.sleep(1.5)
+                        print('Welcome Developer')
+                        time.sleep(2)
+                        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                        logging.debug("Developer logged in at: " + localtime)
+                        Loop="True"
+                if password2 != (dapassword) or (adminpass) or (devpass):
                         print('Please wait')
                         time.sleep(2)
                         print('Incorrect Password You have NO MORE Attempts Left')
@@ -170,12 +203,14 @@ if beta != ("True"):
 #Admin
 #Mod
 #User
-if beta == ("False"):
+if Developer == ("True"):
+        print('Welcome Developer you know what to do!')
+if beta == ("False") or developer == ("False") or Admin == ("False"):
         print('Welcome to your HomeGuard command console by Vitanoxi')
         print('Please input your command')
         command=input()
 if beta == ("True"):
-        print('Welcome Developer')
+        print('Welcome Beta Tester')
         print('Please input your command')
         command=input()
 if Admin == ("True") and beta == ("False"):
@@ -202,6 +237,21 @@ while Loop == ("True"):
                         logging.debug("Someone has used the help command: " + localtime)
                         time.sleep(2)
                         command=input()
+
+#################################################DEV COMMANDS##########################################################
+                        
+                if command == ("log") and Developer == ("True"):
+                        print file.read()
+                if command == ("help") and Developer == ("True"):
+                        print('Commands:')
+                        print('mod\nlaser\nupload\nopengui\nhelp\nexitprogram\nversion')
+                        print('')
+                        print('Developer Commands:')
+                        print('log\nhelp')
+                        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                        logging.debug("Someone has used the help command: " + localtime)
+                        time.sleep(2)
+                        command=input()        
                         
 ####################################################USER COMMANDS#######################################################
                         
