@@ -48,7 +48,7 @@ print('                              (C) 2014                               ')
 print(                               'Version '  + current_version           )
 print('#####################################################################')
 time.sleep(1)
-if beta != ("True"):
+if beta == ("False"):
         print("Loading 10%")
         time.sleep(0.25)
         print("Loading 20%")
@@ -70,7 +70,7 @@ if beta != ("True"):
         print("Loading 99%")
         time.sleep(5)
 #First Chance        
-if beta != ("True"):
+if beta == ("False"):
         print("Loaded Vitanoxi Verstion " + current_version)
         time.sleep(1)
         print('Please enter your Password.')
@@ -104,8 +104,6 @@ if beta != ("True"):
                 time.sleep(1.5)
                 print('Welcome Developer')
                 time.sleep(2)
-                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-                logging.debug("Developer logged in at: " + localtime)
                 Loop="True"        
         if password != (dapassword) or (adminpass) or (devpass):
                         print('Please wait')
@@ -146,8 +144,6 @@ if beta != ("True"):
                         time.sleep(1.5)
                         print('Welcome Developer')
                         time.sleep(2)
-                        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-                        logging.debug("Developer logged in at: " + localtime)
                         Loop="True"        
                 if password1 != (dapassword) or (adminpass) or (devpass):
                         print('Please wait')
@@ -188,8 +184,6 @@ if beta != ("True"):
                         time.sleep(1.5)
                         print('Welcome Developer')
                         time.sleep(2)
-                        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-                        logging.debug("Developer logged in at: " + localtime)
                         Loop="True"
                 if password2 != (dapassword) or (adminpass) or (devpass):
                         print('Please wait')
