@@ -217,11 +217,11 @@ if Admin == ("False") or beta == ("True"):
         exit("Closed")
         
                         
-#################################################ADMIN COMMANDS##########################################################
+#################################################ADMIN/DEV COMMANDS##########################################################
 while Loop == ("True"):
-        if command == ("log") and Admin ==("True"):
+        if command == ("log") and Admin == ("True") and beta == ("False")  or Developer == ("True") and command == ("help") and beta == ("False"):
                 print file.read()
-                if command == ("help") and Admin == ("True") and Developer == ("False") and beta == ("False"):
+                if command == ("help") and Admin == ("True") and beta == ("False")  or Developer == ("True") and command == ("help") and beta == ("False"):
                         print('Commands:')
                         print('mod\nlaser\nupload\nopengui\nhelp\nexitprogram\nversion')
                         print('')
