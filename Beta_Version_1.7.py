@@ -221,90 +221,68 @@ if Admin == ("False") or beta == ("True"):
 while Loop == ("True"):
         if command == ("log") and Admin == ("True") and beta == ("False")  or Developer == ("True") and command == ("help") and beta == ("False"):
                 print file.read()
-                if command == ("help") and Admin == ("True") and beta == ("False")  or Developer == ("True") and command == ("help") and beta == ("False"):
-                        print('Commands:')
-                        print('mod\nlaser\nupload\nopengui\nhelp\nexitprogram\nversion')
-                        print('')
-                        print('Admin Commands:')
-                        print('log\nhelp')
-                        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-                        logging.debug("Someone has used the help command: " + localtime)
-                        time.sleep(2)
-                        command=input()
-
-#################################################DEV COMMANDS##########################################################
-                        
-                if command == ("log") and Developer == ("True"):
-                        print file.read()
-                if command == ("help") and Developer == ("True"):
-                        print('Commands:')
-                        print('mod\nlaser\nupload\nopengui\nhelp\nexitprogram\nversion')
-                        print('')
-                        print('Developer Commands:')
-                        print('log\nhelp')
-                        logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-                        logging.debug("Someone has used the help command: " + localtime)
-                        time.sleep(2)
-                        command=input()        
+        if command == ("help") and Admin == ("True") and beta == ("False")  or Developer == ("True") and command == ("help") and beta == ("False"):
+                print('Commands:')
+                print('mod\nlaser\nupload\nopengui\nhelp\nexitprogram\nversion')
+                print('')
+                print('Admin Commands:')
+                print('log\nhelp')
+                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                logging.debug("Someone has used the help command: " + localtime)
+                time.sleep(2)
+                command=input()       
                         
 ####################################################USER COMMANDS#######################################################
                         
-                        if command == ("opengui"):
-                                print('Please wait')
-                                time.sleep(1.5)
-                                execfile("dropbox_shorts.py")
-                                print('Executing command')
-                                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-                                logging.debug("Someone has used the open gui command: "  + localtime)
-                                time.sleep(2)
-                                command=input()
-                        if command == ("help") and Admin == ("False") and Developer == ("False"):
-                                print('Commands:')
-                                print('admin\nmod\nlaser\nupload\nopengui\nhelp\nexitprogram\nversion')
-                                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-                                logging.debug("Someone has used the help command: " + localtime)
-                                time.sleep(2)
-                                command=input()
-                        if command == ("egg"):
-                                print('Congrats you have found the easter egg here is your prize!')
-                                logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
-                                logging.debug("SOMEONE HAS FOUND THE EASTER EGG! ")
-                                time.sleep(5)
-                                exit()
-                        if command == ("exitprogram"):
-                                print('Please wait')
-                                time.sleep(1.5)
-                                print('Exiting Vitanoxi HomeGuard Console')
-                                print('Exiting in 5')
-                                time.sleep(1)
-                                print('4')
-                                time.sleep(1)
-                                print('3')
-                                time.sleep(1)
-                                print('2')
-                                time.sleep(1)
-                                print('1')
-                                time.sleep(1)
-                                exit("Closed")
-                        if command == ("info"):
-                                print('#####################################################################')
-                                print('                              HOMEGUARD                              ')
-                                print('                              (C) 2014                               ')
-                                print(                               'Version ' + current_version            )
-                                print('                                                                     ')
-                                print('CEO/JrDev: Sabian Coomber-Nickerson                                  ')
-                                print('Project Manager/Developer: Bryce Simpson                             ')
-                                print('Developer: Jack Heikel                                               ')
-                                print('#####################################################################')
-                                command=input()
-                        if command != ("opengui" or "help" or "egg" or "exitprogram" or "info") and Developer != ("True"):
-                                print('Incorrect command input!')
-                                command=input()
-                                #End="True"
-                        if command != ("opengui" or "help" or "egg" or "exitprogram" or "info") and Developer == ("True"):
-                                print('NIGGA YOU FAIL AT LIFE!')
-                                command=input()
-                                #End="True"
+                    
+        if command == ("help") and Admin == ("False") and Developer == ("False"):
+                 print('Commands:')
+                 print('admin\nmod\nlaser\nupload\nopengui\nhelp\nexitprogram\nversion')
+                 logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                 logging.debug("Someone has used the help command: " + localtime)
+                 time.sleep(2)
+                 command=input()
+        if command == ("egg"):
+                 print('Congrats you have found the easter egg here is your prize!')
+                 logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                 logging.debug("SOMEONE HAS FOUND THE EASTER EGG! ")
+                 time.sleep(5)
+                 exit()
+        if command == ("exitprogram"):
+                 print('Please wait')
+                 time.sleep(1.5)
+                 print('Exiting Vitanoxi HomeGuard Console')
+                 print('Exiting in 5')
+                 time.sleep(1)
+                 print('4')
+                 time.sleep(1)
+                 print('3')
+                 time.sleep(1)
+                 print('2')
+                 time.sleep(1)
+                 print('1')
+                 time.sleep(1)
+                 exit("Closed")
+        if command == ("info"):
+                 print('#####################################################################')
+                 print('                              HOMEGUARD                              ')
+                 print('                              (C) 2014                               ')
+                 print(                               'Version ' + current_version            )
+                 print('                                                                     ')
+                 print('CEO/JrDev: Sabian Coomber-Nickerson                                  ')
+                 print('Project Manager/Developer: Bryce Simpson                             ')
+                 print('Developer: Jack Heikel                                               ')
+                 print('#####################################################################')
+                 command=input()
+        if command != ("opengui" or "help" or "egg" or "exitprogram" or "info") and Developer != ("True"):
+                 print('Incorrect command input!')
+                 command=input()
+                 #End="True"
+        if command != ("opengui" or "help" or "egg" or "exitprogram" or "info") and Developer == ("True"):
+                 print('NIGGA YOU FAIL AT LIFE!')
+                 command=input()
+                 #End="True"
+
 ''''
                         if End == ("True"):
                                 time.sleep(5)
