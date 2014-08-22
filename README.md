@@ -20,4 +20,5 @@ To Do
 - [ ] Image compresser?
 - [ ] Release test version
 - [ ] Install Librarys
-- [6.25%] Finish to do list
+- [6.25] Finish to do list
+- Finish calculating to-do list copmpletness percentage
