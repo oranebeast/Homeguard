@@ -197,13 +197,13 @@ if beta == ("False"):
 #Admin
 #Mod
 #User
-if Developer == ("True"):
+if Developer == ("True") and Admin == ("False"):
         print('Welcome Developer you know what to do!')
 if beta == ("False") or developer == ("False") or Admin == ("False"):
         print('Welcome to your HomeGuard command console by Vitanoxi')
         print('Please input your command')
         command=input()
-if beta == ("True"):
+if beta == ("True") and Admin == ("False"):
         print('Welcome Beta Tester')
         print('Please input your command')
         command=input()
@@ -211,7 +211,7 @@ if Admin == ("True") and beta == ("False"):
         print('Welcome to Admin. You are in control)
         print('Please input your command')
         command=input()
-if Admin == ("False") or beta == ("True"):
+if Admin == ("True") and beta == ("True"):
         print('Beta is enabled please disable it and try again!')
         time.sleep(5)
         exit("Closed")
