@@ -134,5 +134,5 @@ while Loop == ("True"):
                  print('Developer: Jack Heikel                                               ')
                  print('#####################################################################')
                  
-        if command == ("opengui" or "help" or "egg" or "exit" or "info"):
+        if command != ("opengui" or "help" or "egg" or "exit" or "info"):
                  command=input()
