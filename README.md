@@ -1,7 +1,5 @@
-Homeguard (Stable 1.6) (Beta 1.7)
+Homeguard (Stable 1.7) (Beta 1.8)
 =========
-Prepare for Homeguard stable version 1.7!!!
-===
 
 A Python project for guarding the home, Uses webcams.
 
