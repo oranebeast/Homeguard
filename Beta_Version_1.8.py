@@ -1,4 +1,4 @@
-# Copyright (C) 2014 Vitanoxi <Vitanoxi@gmail.com>
+# Copyright (C) 2014 Vitanoxi <Bro, We don't have any emails.>
 
 #  _    _                                                _ 
 # | |  | |                                              | |
