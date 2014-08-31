@@ -15,6 +15,7 @@
 #import getpass
 import time
 import logging
+from pyo import *
 
 #########LOOP DO NOT TOUCH!!!#########
 Loop="False"                         #
@@ -25,6 +26,7 @@ localtime = time.asctime( time.localtime(time.time()) )
 dapassword="pass"
 beta="True"
 current_version="1.8 Beta"
+s = Server().boot()
 #file=open('Logging/Logs.log', 'r')
 
 #Group Define
@@ -102,6 +104,14 @@ while Loop == ("True"):
                  logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
                  logging.debug("Someone has used the help command: " + localtime)
                  time.sleep(2)
+        if command == ("alarm"):
+                 print('Sounding the alarm!')
+                 logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
+                 logging.debug("Sounding the alarm!")
+                 time.sleep(5)
+                 s.start()
+                 sf = SfPlayer("Resources\Sounds\Intruder_Alarm", speed=1, loop=True).out()
+                          
         if command == ("egg"):
                  print('Congrats you have found the easter egg here is your prize!')
                  logging.basicConfig(filename='Logging/logs.log',level=logging.DEBUG)
@@ -134,5 +144,5 @@ while Loop == ("True"):
                  print('Developer: Jack Heikel                                               ')
                  print('#####################################################################')
                  
-        if command != ("opengui" or "help" or "egg" or "exit" or "info"):
+        if command != ("opengui" or "help" or "egg" or "exit" or "info" or "alarm"):
                  command=input()
