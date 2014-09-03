@@ -22,3 +22,8 @@ To Do
 - [ ] Install Librarys
 - [6.25] Finish to do list
 - Finish calculating to-do list copmpletness percentage
+- 
+
+=========
+Feeling down?
+http://img-9gag-lol.9cache.com/photo/aZWM059_460s.jpg
