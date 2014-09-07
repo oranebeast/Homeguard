@@ -1,2 +1,3 @@
-This Is Now Inactive!!!!
+Inactive Project.
 =======================
+http://github.com/vitanoxi/homeguard/
